@@ -1,6 +1,6 @@
 eventlet==0.30.0
 Flask==2.1.0
-Flask-SocketIO==2.0.0
+Flask-SocketIO==3.0.0
 numpy==1.19.3
 opencv-python==3.4.3.18
 Pillow==8.1.2
