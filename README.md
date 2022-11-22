@@ -20,8 +20,8 @@ STEAM là một định nghĩa về phương pháp giáo dục được phát tr
 
 ## Phần mềm giả lập và code mẫu
 
-Cách tải phần mềm giả lập và hướng dẫn [tại đây.](./hello-via/README.md)
+Cách tải phần mềm giả lập và hướng dẫn [tại đây.](./hello-via)
 
 ## Makerbot Mini 2022 (Mạch VIA Bánh Mì Que)
 
-Hướng dẫn cách sử dụng mạch Makerbot Mini [tại đây](./makerbot-mini/README.md)
+Hướng dẫn cách sử dụng mạch Makerbot Mini [tại đây](./makerbot-mini)
