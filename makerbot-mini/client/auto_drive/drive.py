@@ -28,8 +28,7 @@ while True:
 
         try:
             # Decode image
-            image = cv2.imdecode(np.fromstring(
-                image, dtype=np.uint8), cv2.IMREAD_COLOR)
+            image = cv2.imdecode(np.fromstring(image, dtype=np.uint8), cv2.IMREAD_COLOR)
             cv2.imshow('Image', image)
         except:
             if cv2.waitKey(1) == 27:

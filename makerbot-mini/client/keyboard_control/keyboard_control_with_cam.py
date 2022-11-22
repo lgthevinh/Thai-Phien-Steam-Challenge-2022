@@ -94,8 +94,7 @@ while run:
         image = bytes[a:b+2]
         bytes = bytes[b+2:]
         try:
-            image = cv2.imdecode(np.frombuffer(
-                image, dtype=np.uint8), cv2.IMREAD_COLOR)
+            image = cv2.imdecode(np.frombuffer(image, dtype=np.uint8), cv2.IMREAD_COLOR)
         except:
             continue
         cv2.imshow("Image", image)
