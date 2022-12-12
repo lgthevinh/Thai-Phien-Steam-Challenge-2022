@@ -2,7 +2,7 @@
 
 ## Cài đặt môi trường
 
-- Yêu cầu môi trường: Python 3.7
+- Yêu cầu môi trường: Python 3.7 trở lên
 
 ```
 pip install -r requirements.txt
