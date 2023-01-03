@@ -30,7 +30,7 @@ origin_y = rect.y
 
 run = True
 while run:
-    clock.tick(20)
+    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -38,27 +38,28 @@ while run:
             print(pygame.key.name(event.key))
 
     keys = pygame.key.get_pressed()
-
+    
+    control_speed = 80
     color = (255, 0, 0)
     if keys[pygame.K_UP] or keys[ord('w')]:
         rect.x = origin_x
         rect.y = origin_y - 50
-        set_speed(30, 30)
+        set_speed(control_speed, control_speed )
         color = (0, 0, 255)
     elif keys[pygame.K_DOWN] or keys[ord('s')]:
         rect.x = origin_x
         rect.y = origin_y + 50
-        set_speed(-30, -30)
-        color = (0, 0, 255)
-    elif keys[pygame.K_LEFT] or keys[ord('a')]:
-        rect.x = origin_x - 50
-        rect.y = origin_y
-        set_speed(-30, 30)
+        set_speed(-control_speed, -control_speed)
         color = (0, 0, 255)
     elif keys[pygame.K_RIGHT] or keys[ord('d')]:
+        rect.x = origin_x - 50
+        rect.y = origin_y
+        set_speed(-control_speed, control_speed)
+        color = (0, 0, 255)
+    elif keys[pygame.K_LEFT] or keys[ord('a')]:
         rect.x = origin_x + 50
         rect.y = origin_y
-        set_speed(30, -30)
+        set_speed(control_speed, -control_speed)
         color = (0, 0, 255)
     else:
         rect.x = origin_x
